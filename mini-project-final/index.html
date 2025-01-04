@@ -15,47 +15,84 @@
       </p>
     </header>
     <main>
-      <div id="chart-container">
-        <h2>Market Price</h2>
-        <h5>(USD)</h5>
-        <canvas id="priceChart"></canvas>
-        <h3>~ Why is Market Price useful? ~</h3>
-        <p>Determines asset value, what buyers are willing to pay & sellers willing to accept</p>
-        <p>Allows for Technical Analysis Tools such as RSI & moving averages to identify entry & exit points</p>
-        <p>Helps identify general market sentiment due to price increases or decreases</p>
-      </div>
-      <div id="chart-container">
-        <h2>Trading Volume</h2>
-        <h5>(24 Hour)</h5>
-        <canvas id="volumeChart"></canvas>
-        <h3>~ Why is Trading Volume useful? ~</h3>
-        <p>Sign of liquidity: how easily an asset can be bought or sold without changing it's price</p>
-        <p>Signals market interest through participation</p>
-        <p>Helps identify a market trend or reversal pattern</p>
-      </div>
-      <div id="chart-container">
-        <h2>Market Cap</h2>
-        <h5>(USD)</h5>
-        <canvas id="marketCapChart"></canvas>
-                <h3>~ Why is Market Cap useful? ~</h3>
-        <p>Measure the relative size of the asset in the context of it's industry</p>
-        <p>Signals stability, with higher market cap deemed a more stable asset</p>
-        <p>Identify growth potential when used in conjunction with fundamental analysis</p>
-      </div>
+      <div class="chart-grid">
+        <div class="chart-container">
+          <h2>Market Price</h2>
+          <h5>(USD)</h5>
+          <canvas id="priceChart"></canvas>
+          <h3>~ Why is Market Price useful? ~</h3>
+          <p>
+            Determines asset value, what buyers are willing to pay & sellers
+            willing to accept
+          </p>
+          <p>
+            Allows for Technical Analysis Tools such as RSI & moving averages to
+            identify entry & exit points
+          </p>
+          <p>
+            Helps identify general market sentiment due to price increases or
+            decreases
+          </p>
         </div>
-        <div id="chart-container">
-          <h2>Live Charts</h2>
+
+        <div class="chart-container">
+          <h2>Market Cap</h2>
+          <h5>(USD)</h5>
+          <canvas id="marketCapChart"></canvas>
+          <h3>~ Why is Market Cap useful? ~</h3>
+          <p>
+            Measure the relative size of the asset in the context of its
+            industry
+          </p>
+          <p>
+            Signals stability, with higher market cap deemed a more stable asset
+          </p>
+          <p>
+            Identify growth potential when used in conjunction with fundamental
+            analysis
+          </p>
+        </div>
+
+        <div class="chart-container">
+          <h2>Trading Volume</h2>
           <h5>(24 Hour)</h5>
-          <input
-      type="text"
-      id="search-bar"
-      placeholder="Enter crypto ticker (e.g BTC)"
-    />
-    <div id="tradingview-widget"></div>
           <canvas id="volumeChart"></canvas>
+          <h3>~ Why is Trading Volume useful? ~</h3>
+          <p>
+            Sign of liquidity: how easily an asset can be bought or sold without
+            changing its price
+          </p>
+          <p>Signals market interest through participation</p>
+          <p>Helps identify a market trend or reversal pattern</p>
         </div>
+
+        <div class="chart-container">
+          <h2>Price Percentage Change</h2>
+          <h5>(24 Hour)</h5>
+          <canvas id="percentageChangeChart"></canvas>
+          <h3>~ Why is Price Percentage Change useful? ~</h3>
+          <p>Comparative Analysis of price change, in Market Cap context</p>
+          <p>
+            Allows better risk management by looking at short term volatility
+          </p>
+          <p>Market sentiment indicator</p>
+        </div>
+      </div>
+      <div class="chart-container">
+        <h2>Live Charts</h2>
+        <h5>(24 Hour)</h5>
+        <input
+          type="text"
+          id="search-bar"
+          placeholder="Enter crypto ticker (e.g BTC)"
+        />
+        <div id="tradingview-widget"></div>
+        <canvas id="liveChart"></canvas>
       </div>
     </main>
     <script src="myscript.js"></script>
   </body>
+  <footer>
+    <p>&copy; 2025, Crash Nuts. All rights reserved.</p>
+  </footer>
 </html>
