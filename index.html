@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Your Crypto Dashboard</title>
+  </head>
+  <body>
+    <header id="header">
+      <h1 id="header-title">Your Crypto Dashboard</h1>
+      <p id="header-description">
+        Real-time Market Data for your favourite Cryptocurrencies
+      </p>
+    </header>
+    <main>
+      <div id="chart-container">
+        <h2>Market Price</h2>
+        <h5>(USD)</h5>
+        <canvas id="priceChart"></canvas>
+      </div>
+      <div id="chart-container">
+        <h2>Trading Volume</h2>
+        <h5>(24 Hour)</h5>
+        <canvas id="volumeChart"></canvas>
+        <h3>~ Why is Trading Volume useful? ~</h3>
+        <p>Sign of liquidity: how easily an asset can be bought or sold without changing it's price</p>
+        <p>Signals market interest through participation</p>
+        <p>Helps identify a market trend or reversal pattern</p>
+      </div>
+      <div id="chart-container">
+        <h2>Market Cap</h2>
+        <h5>(USD)</h5>
+        <canvas id="marketCapChart"></canvas>
+        </div>
+        <div id="chart-container">
+          <h2>Live Charts</h2>
+          <h5>(24 Hour)</h5>
+          <input
+      type="text"
+      id="search-bar"
+      placeholder="Enter crypto ticker (e.g BTC)"
+    />
+    <div id="tradingview-widget"></div>
+          <canvas id="volumeChart"></canvas>
+        </div>
+      </div>
+    </main>
+    <script src="myscript.js"></script>
+  </body>
+</html>
