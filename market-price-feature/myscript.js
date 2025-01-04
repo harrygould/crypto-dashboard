@@ -83,7 +83,7 @@ async function setUpCharts() {
         },
         title: {
           display: true,
-          text: "Current Market Prices (Log Scale)",
+          text: "Bar Chart Representation",
           color: "white",
         },
       },
