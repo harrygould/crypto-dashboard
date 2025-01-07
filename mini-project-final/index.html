@@ -4,15 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script
+      type="text/javascript"
+      src="https://s3.tradingview.com/tv.js"
+    ></script>
     <title>Your Crypto Dashboard</title>
   </head>
   <body>
     <header id="header">
       <h1 id="header-title">Your Crypto Dashboard</h1>
-      <p id="header-description">
-        Real-time Market Data for your favourite Cryptocurrencies
-      </p>
+      <h5 id="header-description">
+        ~ Real-time Market Data for your favourite Cryptocurrencies ~
+      </h5>
     </header>
     <main>
       <div class="chart-grid">
@@ -33,6 +42,18 @@
             Helps identify general market sentiment due to price increases or
             decreases
           </p>
+        </div>
+
+        <div class="chart-container">
+          <h2>Price Percentage Change</h2>
+          <h5>(24 Hour)</h5>
+          <canvas id="percentageChangeChart"></canvas>
+          <h3>~ Why is Price Percentage Change useful? ~</h3>
+          <p>Comparative Analysis of price change, in Market Cap context</p>
+          <p>
+            Allows better risk management by looking at short term volatility
+          </p>
+          <p>Market sentiment indicator</p>
         </div>
 
         <div class="chart-container">
@@ -64,35 +85,53 @@
           </p>
           <p>Signals market interest through participation</p>
           <p>Helps identify a market trend or reversal pattern</p>
+          <div id="did-you-know">
+            <h3 id="bitcoin-fact-header">~ Fun Bitcoin Facts! ~</h3>
+            <p class="bitcoin-fact">
+              Bitcoin is simply a C++ computer code protocol which is proof of a
+              transaction between two entities
+            </p>
+            <p class="bitcoin-fact">
+              It was created by an 'anonymous' Software Engineer(s) in response
+              to the 2008 banking collapse
+            </p>
+            <p class="bitcoin-fact">
+              There is a fixed supply of 21 million Bitcoin & the final Bitcoin
+              will take about 40 years to mine
+            </p>
+            <p class="bitcoin-fact">
+              It offers financial privacy and freedom, as users can send money
+              to anyone, anywhere, without relying on a central authority
+            </p>
+          </div>
         </div>
 
-        <div class="chart-container">
-          <h2>Price Percentage Change</h2>
-          <h5>(24 Hour)</h5>
-          <canvas id="percentageChangeChart"></canvas>
-          <h3>~ Why is Price Percentage Change useful? ~</h3>
-          <p>Comparative Analysis of price change, in Market Cap context</p>
+        <div class="tradingview-chart-container">
+          <h2>Live Charts</h2>
+          <h5>Enter your favourite Crypto for live price action!</h5>
+          <input
+            type="text"
+            id="search-bar"
+            placeholder="Enter crypto ticker (e.g BTC)"
+            placeh
+          />
+          <div id="tradingview-widget-container"></div>
+          <h3>~ Included Useful Trading Indicators ~</h3>
           <p>
-            Allows better risk management by looking at short term volatility
+            RSI: Momentum indicator, showing if an asset is overbought (greater
+            than 70) or oversold (less than 30)
           </p>
-          <p>Market sentiment indicator</p>
+          <p>
+            MACD: Trend indicator that compares relationship between moving
+            averages and displays as 'bullish' (greater than 0) or 'bearish'
+            (less than 0)
+          </p>
         </div>
-      </div>
-      <div class="chart-container">
-        <h2>Live Charts</h2>
-        <h5>(24 Hour)</h5>
-        <input
-          type="text"
-          id="search-bar"
-          placeholder="Enter crypto ticker (e.g BTC)"
-        />
-        <div id="tradingview-widget"></div>
-        <canvas id="liveChart"></canvas>
       </div>
     </main>
     <script src="myscript.js"></script>
   </body>
   <footer>
-    <p>&copy; 2025, Crash Nuts. All rights reserved.</p>
+    <h5>&copy; 2025, Crash Nuts. All rights reserved.</h5>
   </footer>
 </html>

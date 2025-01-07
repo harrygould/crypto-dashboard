@@ -27,7 +27,7 @@ The feature branches will fetch the required data from the public API and be vis
 - `feature/trading-volume`: Adds the vanilla Javascript for trading volume & represents this using a line chart.
 - `feature/market-cap`: Adds the vanilla Javascript for the market cap & represents this using a pie chart.
 - `sub-feature/market-price-percentage-change`: Adds the vanilla Javascript for the market cap & represents this using a bar chart.
-- **EXTRA** `feature/live-price`: Adds the vanilla Javascript, using a search bar to allow the user to search for the live price chart of their chosen cryptocurrency, which will pull a real-time chart from a TradingView embedded widget, rather than a public API, as TradingView doesn't offer free public API's.
+- **EXTRA** `feature/live-price`: Adds the vanilla Javascript, using a search bar to allow the user to search for the live price chart of their chosen cryptocurrency (including some popular indicators), which will pull a real-time chart from a TradingView embedded widget, rather than a public API, as TradingView doesn't offer free public API's.
 
 ### **Workflow Summary**
 
