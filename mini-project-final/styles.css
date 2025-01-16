@@ -57,14 +57,14 @@ main {
 
 @media (min-width: 992px) {
   .chart-grid {
-    flex-direction: row; /* Side-by-side layout */
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
   }
 
   .chart-container {
-    width: 42%; /* Adjust width for side-by-side layout */
+    width: 42%;
   }
 }
 canvas {
@@ -137,7 +137,7 @@ footer {
 }
 
 #search-bar::placeholder {
-  color: white; /* Change to desired color */
-  opacity: 0.7; /* Ensure full opacity */
-  font-style: italic; /* Optional: Make it italic */
+  color: white;
+  opacity: 0.7;
+  font-style: italic;
 }
